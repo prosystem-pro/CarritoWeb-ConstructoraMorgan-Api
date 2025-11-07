@@ -9,7 +9,6 @@ const VerificarPermisos = (Permiso, Recurso) => {
       if (SuperAdmin === 1) {
         return next();
       }
-z
       if (!CodigoRol) {
         return res.status(403).json({ error: 'No autorizado, rol no proporcionado' });
       }
